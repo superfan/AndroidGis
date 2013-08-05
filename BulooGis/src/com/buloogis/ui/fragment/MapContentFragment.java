@@ -43,6 +43,7 @@ public class MapContentFragment extends Fragment {
     	}
     	
     	mMapView.addLayer(new ArcGISTiledMapServiceLayer(getResources().getString(R.string.map_url)));
+    	mMapView.setAlwaysDrawnWithCacheEnabled(true);
     	
         return mMapView;
     }
