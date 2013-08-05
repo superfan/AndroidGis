@@ -20,6 +20,8 @@ public class SlidingActivityHelper {
 	private View mViewAbove;
 
 	private View mViewBehind;
+	
+	private View mSecondaryViewBehind;
 
 	private boolean mBroadcasting = false;
 
@@ -161,6 +163,11 @@ public class SlidingActivityHelper {
 	public void setBehindContentView(View view, LayoutParams layoutParams) {
 		mViewBehind = view;
 		mSlidingMenu.setMenu(mViewBehind);
+	}
+	
+	public void setSecondaryBehindContentView(View view, LayoutParams layoutParams) {
+		mSecondaryViewBehind = view;
+		mSlidingMenu.setSecondaryMenu(mSecondaryViewBehind);
 	}
 
 	/**

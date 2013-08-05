@@ -97,6 +97,29 @@ public class SlidingActivity extends BaseActivity implements SlidingActivityBase
 		mHelper.setBehindContentView(v, params);
 	}
 
+	//////////
+	/* (non-Javadoc)
+	 * @see com.slidingmenu.lib.app.SlidingActivityBase#setBehindContentView(int)
+	 */
+	public void setSecondaryBehindContentView(int id) {
+		setSecondaryBehindContentView(getLayoutInflater().inflate(id, null));
+	}
+
+	/* (non-Javadoc)
+	 * @see com.slidingmenu.lib.app.SlidingActivityBase#setBehindContentView(android.view.View)
+	 */
+	public void setSecondaryBehindContentView(View v) {
+		setSecondaryBehindContentView(v, new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
+	}
+
+	/* (non-Javadoc)
+	 * @see com.slidingmenu.lib.app.SlidingActivityBase#setBehindContentView(android.view.View, android.view.ViewGroup.LayoutParams)
+	 */
+	public void setSecondaryBehindContentView(View v, LayoutParams params) {
+		mHelper.setSecondaryBehindContentView(v, params);
+	}
+	//////////
+	
 	/* (non-Javadoc)
 	 * @see com.slidingmenu.lib.app.SlidingActivityBase#getSlidingMenu()
 	 */
